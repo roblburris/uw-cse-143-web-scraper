@@ -40,7 +40,7 @@ for cur in links:
         time.sleep(2)
         elem = driver.page_source
         soup1 = BeautifulSoup(elem, 'lxml')
-        with open(temp + str(count) + '.txt', 'w') as f:
+        with open(temp + str(count) + '.html', 'w') as f:
             f.write(soup1.prettify())
 
         print("saved file: " + temp + str(count) + '.html')
